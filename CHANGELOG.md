@@ -6,6 +6,14 @@ Minecraft Bedrock Edition向けアドオン **プラエテリタ（Praeterita）
 > **名称と互換性**：初期には「プラエテリア（Praeteria）」と呼んでいましたが、表記を「プラエテリタ」に訂正しました。既存ワールドを守るため、内部識別子 `praeteria:` と基本のパックUUIDは原則維持しています。  
 > **重要**：旧バージョンの仕様はその版の履歴です。現在の仕様と異なる記述も、変更の経緯として残しています。
 
+## v0.2.2 — Issue #1〜#3（開発版・実機未検証）
+
+- [Issue #1](https://github.com/botamoti55/Praeterita-Addon/issues/1)：しゃがみ使用の半径10ブロック範囲時間停止を、30秒間およそ1秒ごとに描き直す粒子リングで表示。
+- [Issue #2](https://github.com/botamoti55/Praeterita-Addon/issues/2)：未来を売る者を最大HP100・近接攻撃力15に強化。近接攻撃の命中相手へ30秒の時間追放を適用。既存の遠距離攻撃は維持。
+- [Issue #3](https://github.com/botamoti55/Praeterita-Addon/issues/3)：「祝福の刻」のレシピを変更。上段中央ネザースター、中段左右に未来の大結晶・中央に時計、下段に時流インゴット3個。旧レシピから置換。
+- オフライン検査：JSON・参照など28項目、範囲時間停止と杖12項目、商人8項目を通過。Minecraft本体/BDSでの実機動作は未確認。
+- この時点でGitHubリポジトリは文書中心。BP/RPの完全ソースおよびGitHub Releasesへのパッケージ公開は未完了。
+
 ## v0.2.1 — 範囲時間停止・時送りの杖・装備表示
 
 ### 変更
