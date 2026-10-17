@@ -6,6 +6,18 @@ Minecraft Bedrock Edition向けアドオン **プラエテリタ（Praeterita）
 > **名称と互換性**：初期には「プラエテリア（Praeteria）」と呼んでいましたが、表記を「プラエテリタ」に訂正しました。既存ワールドを守るため、内部識別子 `praeteria:` と基本のパックUUIDは原則維持しています。  
 > **重要**：旧バージョンの仕様はその版の履歴です。現在の仕様と異なる記述も、変更の経緯として残しています。
 
+## v0.2.3（Issue #5〜#10、採用コメントに従った開発版）
+
+- **[#5](https://github.com/botamoti55/Praeterita-Addon/issues/5)**：時流防具を**1部位以上**装備しているプレイヤーは時間追放を無効化。フルセット不要。
+- **[#6](https://github.com/botamoti55/Praeterita-Addon/issues/6)**：未来の商人の近接・魔法弾による時間追放を**30秒から5秒**へ短縮。商人の魔法の発射間隔は**従来3.8秒＋3秒＝6.8秒**。プレイヤーの時送りの杖は従来の30秒を維持。
+- **[#7](https://github.com/botamoti55/Praeterita-Addon/issues/7)**：未来の商人が敵対系モブを自動標的にする行動を追加。ただし**クリーパーとクリーキングは除外**。各敵モブからの反撃は個別AIに依存するため実機確認が必要。
+- **[#8](https://github.com/botamoti55/Praeterita-Addon/issues/8)**：戦闘をしていない商人は**2秒ごとにHP1回復**。最大100HPを超えない。
+- **[#9](https://github.com/botamoti55/Praeterita-Addon/issues/9)**：時の欠片は**1〜3個確定ドロップ**へ変更。ドロップ増加の追加抽選に対応。さらに**時流インゴットを独立0.83％抽選**。
+- **[#10](https://github.com/botamoti55/Praeterita-Addon/issues/10)**：商人の自動スポーンを**地上の非海洋バイオーム、確認済みフルブロックの上**に制限。地下洞窟や海を候補から除外。
+- エンティティID・時流装備ID・パックUUIDは維持し、既存ワールドの互換性に配慮。
+- **構造・個人情報検査24件、魔法・湧き場所の模擬チェック15件、既存範囲停止の模擬チェック12件を通過**。Minecraft実機・BDSでは未検証。
+- この時点ではGitHubに**文書と配布用説明**を反映。BP/RPの完全ソースのGitHubへのアップロード、GitHub Releasesでの正式配布は未完了。
+
 ## v0.2.2 — Issue #1〜#3（開発版・実機未検証）
 
 - [Issue #1](https://github.com/botamoti55/Praeterita-Addon/issues/1)：しゃがみ使用の半径10ブロック範囲時間停止を、30秒間およそ1秒ごとに描き直す粒子リングで表示。
